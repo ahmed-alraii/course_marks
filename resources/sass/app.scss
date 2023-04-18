@@ -1,0 +1,104 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+body{
+    font-family: "Times New Roman", sans-serif;
+}
+
+.page-link.active, .active > .page-link {
+    z-index: 3;
+    color: var(--bs-pagination-hover-bg);
+    background-color: #7a00ff;
+    border-color: #7a00ff;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: white;
+    background-color:  #7a00ff;
+    border-color: var(--bs-pagination-hover-border-color);
+}
+.page-link {
+    position: relative;
+    display: block;
+    padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+    font-size: var(--bs-pagination-font-size);
+    color: #7a00ff;
+    text-decoration: none;
+    background-color: var(--bs-pagination-bg);
+    border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: white;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.ui-widget-header {
+    border:none;
+    color: #333333;
+    background-color: #f6f7f8;
+    font-weight: bold;
+}
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px;
+}
+table.dataTable thead th.ui-state-default, table.dataTable tfoot th.ui-state-default {
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+.bg-mdi-gray{
+   background-color:  #e9eaef;
+}
+.text-purple{
+   color: #7a00ff;
+}
+.r-3{
+    border-radius: 5px;
+}
+.bg-purple{
+    background-color: #7a00ff;
+    color: white;
+}
+.size-5{
+    font-size: 15px;
+}
+@media print {
+    #print , #back {
+        display: none;
+    }
+}
+@page { size: auto;  }
+
+.select2-results__option {
+    padding: 6px;
+    user-select: none;
+    -webkit-user-select: none;
+    font-size: medium;
+}
+@media only screen and (max-width: 600px) {
+    .counts{
+        text-align: left;
+    }
+}
+.form-select-lg {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    font-family: "Times New Roman", serif;
+    font-size: medium;
+    font-weight: bold;
+}
